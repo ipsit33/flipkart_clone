@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@310&family=Roboto+Condensed&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    /* border: 2px solid red; */
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 6vw;
+    padding: 0 23px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.search input {
+    width: 30vw;
+    height: 28px;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-radius: 4px;
+    margin: 0 16px 0 50px;
+    padding: 0 12px;
+}
+
+.search button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.icons{
+    margin: 58px auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 10px black;
+}
+
+.icons span{
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.icons span:hover{
+    color: #4970f1c7;
+}
+.icons span img{
+    height: 6vh;
+    display: flex;
+    margin: auto;
+}
+
+.slider {
+    margin: 21px auto;
+    width: 84vw;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.slider img{
+    width: 83vw;
+    height: 500px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: gray;
+    background: white;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+
+
+.container {
+    min-height: calc(100vh - 8vh - 14vh);
+    background-color: rgb(209, 209, 209);
+}
+
+.card {
+    max-width: 91vw;
+    margin: 40px auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 17px 18px;
+    background-color: white;
+}
+
+.card-item .lines {
+    padding: 10px 0;
+}
+
+
+.card h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.card h2 button {
+    position: absolute;
+    left: 93%;
+    border-radius: 50%;
+    border: 0;
+    background: #0000ffc4;
+    color: white;
+    padding: 2px;
+}
+
+.card-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 10px 16px;
+    width: 15vw;
+    transition: 0.3s ease;
+}
+
+.card-item img{
+    width: auto;
+    height: 25vh;
+}
+
+.card-item img:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    height: 14vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
